@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
+* { box-sizing: border-box; }
+
 body {
     display: flex;
     flex-direction: column;
@@ -19,7 +21,7 @@ body {
 .logo {
     display:flex; 
     align-items: center;
-    padding-left: 0px
+    padding-left: 0px;
 }
 .right-links {
     display:flex; 
@@ -76,7 +78,7 @@ ul {
 .title {
     font-size: 24px;
     color: #F9FAF8;
-    font-weight: 800;
+    font-weight: 900;
 }
 
 .subtext {
@@ -99,7 +101,10 @@ ul {
     background-color: #3B82F6;
     color: #111827;
     transform: scale(0.95);
+}
 
+.sectext button:hover {
+    box-shadow: 0 0 10px yellow;
 }
 
 .section2 {
@@ -124,7 +129,7 @@ ul {
 }
 
 .feature {
-    margin: 0;;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,7 +203,7 @@ figcaption {
     background-color: transparent;
     cursor: pointer;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease; background-color: 0.2s ease, color 0.2s ease;
     
 
 }
@@ -213,6 +218,18 @@ figcaption {
    
 }
 
+.ctabutton .cta-button:active {
+    transform: scale(0.95);
+    color: white;
+    background-color: transparent;
+}
+
+.cta-button:focus-visible {
+  outline: 3px solid #93C5FD;
+  outline-offset: 2px;
+}
+
+
 .cta h2{
     margin: 0;
     padding: 0;
@@ -222,3 +239,17 @@ figcaption {
     margin: 0;
     padding: 0;
 }
+
+.footer {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+}
+
+.footer p {
+    color: whitesmoke;
+    font-size: 16px;
+    padding: 8px;
+
+}
+
